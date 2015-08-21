@@ -1,5 +1,4 @@
 #import "CordovaHttpPlugin.h"
-#import "CDVFile.h"
 #import "TextResponseSerializer.h"
 #import "HttpManager.h"
 
