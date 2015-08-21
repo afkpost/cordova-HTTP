@@ -2,19 +2,17 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="com.compellingsoftware.plugins.http"
-  version="0.1.4">
+  version="0.2.0">
 
-    <name>SSL Pinning</name>
+    <name>Cordova-http</name>
  
     <description>
-        Cordova / Phonegap plugin for communicating with HTTP servers using SSL pinning
+        Cordova for solving iOS issue with status 401
 	</description>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
-
-    <dependency id="org.apache.cordova.file" url="https://github.com/apache/cordova-plugin-file" commit="r0.2.5" />
 
     <js-module src="www/cordovaHTTP.js" name="CordovaHttpPlugin">
         <clobbers target="plugins.CordovaHttpPlugin" />
