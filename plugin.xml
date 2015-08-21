@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
   id="com.compellingsoftware.plugins.http"
-  version="0.1.4">
+  version="0.2.0">
 
     <name>SSL Pinning</name>
  
@@ -68,22 +68,5 @@
 
         <framework src="Security.framework" />
         <framework src="SystemConfiguration.framework" />
-    </platform>
-
-    <!--android -->
-    <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="CordovaHttpPlugin">
-                <param name="android-package" value="com.synconset.CordovaHttpPlugin"/>
-            </feature>
-        </config-file>
-
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttp.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttpGet.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttpPost.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttpUpload.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttpDownload.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/CordovaHttpPlugin.java" target-dir="src/com/synconset" />
-        <source-file src="src/android/com/synconset/CordovaHTTP/HttpRequest.java" target-dir="src/com/github/kevinsawicki/http" />
     </platform>
 </plugin>
