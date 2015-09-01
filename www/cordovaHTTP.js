@@ -16,6 +16,9 @@
             },
             get: function (url, params, headers, success, failure) {
                 return exec(success, failure, "CordovaHttpPlugin", "get", [url, params, headers]);
+            },
+            post: function (url, params, headers, success, failure) {
+                return exec(success, failure, "CordovaHttpPlugin", "post", [url, params, headers]);
             }
         };
 
