@@ -8,5 +8,6 @@
 - (void)setHeader:(CDVInvokedUrlCommand*)command;
 - (void)get:(CDVInvokedUrlCommand*)command;
 - (void)post:(CDVInvokedUrlCommand*)command;
+- (void)getImageAsBase64:(CDVInvokedUrlCommand*)command;
 
 @end

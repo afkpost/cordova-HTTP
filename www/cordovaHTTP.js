@@ -19,6 +19,9 @@
             },
             post: function (url, params, headers, success, failure) {
                 return exec(success, failure, "CordovaHttpPlugin", "post", [url, params, headers]);
+            },
+            getImage: function (url, headers, success, failure) {
+                return exec(success, failure, "CordovaHttpPlugin", "getImageAsBase64", [url, headers]);
             }
         };
 
